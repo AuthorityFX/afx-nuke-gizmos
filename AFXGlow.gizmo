@@ -1003,7 +1003,7 @@ push $N6818d80
   name pre_mask
   xpos 509
   ypos 127
-  disable {{"!\[exists input1.parent.input]"}}
+  disable {{"!\[exists input1.parent.input1]"}}
  }
  Expression {
   temp_name1 luma
