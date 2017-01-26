@@ -12,12 +12,13 @@
 version 10.5 v1
 Gizmo {
  addUserKnob {20 AFXMatteAdjust}
- addUserKnob {41 contrast l Contrast T Ctrls.contrast}
- addUserKnob {41 mix l Mix T Ctrls.mix}
- addUserKnob {26 ""}
  addUserKnob {41 threshold l Threshold T Ctrls.threshold}
+ addUserKnob {26 thresh_controls l "" +STARTLINE}
  addUserKnob {41 falloff l Falloff T Ctrls.falloff}
  addUserKnob {41 darks l Darks T Ctrls.darks}
+ addUserKnob {26 contrast_ctrls l "" +STARTLINE}
+ addUserKnob {41 contrast l Contrast T Ctrls.contrast}
+ addUserKnob {41 amount l Amount T Ctrls.amount}
 }
  Input {
   inputs 0
@@ -53,7 +54,7 @@ push $N1bb0ee70
   Achannels {-rgba.red -rgba.green -rgba.blue rgba.alpha}
   Bchannels {-rgba.red -rgba.green -rgba.blue rgba.alpha}
   output {-rgba.red -rgba.green -rgba.blue rgba.alpha}
-  mix {{Ctrls.mix}}
+  mix {{Ctrls.amount}}
   name Merge1
   xpos 509
   ypos -62
@@ -69,16 +70,17 @@ push $N1bb0ee70
   xpos 652
   ypos -258
   addUserKnob {20 AFXMatteAdjust}
-  addUserKnob {7 contrast l Contrast R 0 2}
-  contrast 1.0
-  addUserKnob {7 mix l Mix}
-  mix 0.5
-  addUserKnob {26 "" +STARTLINE}
   addUserKnob {7 threshold l Threshold}
   threshold 0.2
+  addUserKnob {26 thresh_controls l "" +STARTLINE}
   addUserKnob {7 falloff l Falloff}
   falloff 0.5
   addUserKnob {7 darks l Darks R 0.5 1.5}
   darks 1
+  addUserKnob {26 contrast_ctrls l "" +STARTLINE}
+  addUserKnob {7 contrast l Contrast R 0 2}
+  contrast 1
+  addUserKnob {7 amount l Amount}
+  amount 0.5
  }
 end_group
