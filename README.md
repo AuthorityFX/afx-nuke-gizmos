@@ -13,3 +13,4 @@ Install
 2. Add the following line to init.py - $HOME/.nuke/init.py
         
         nuke.pluginAddPath('$HOME/.nuke/afx-nuke-gizmos')
+Note: The path arg must be an absoulte path. $HOME will not be expanded.
