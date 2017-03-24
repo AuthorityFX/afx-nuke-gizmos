@@ -9,11 +9,7 @@ Requirements
 Install
 -------
 
-1. Copy the afx-nuke-gizmos folder to an appropriate storage location
-2. Add the following line to your init.py
+1. Copy afx-nuke-gizmos to an appropritate directory - eg. $HOME/.nuke/afx-nuke-gizmos
+2. Add the following line to init.py - $HOME/.nuke/init.py
         
-        nuke.pluginAddPath('full-path-to-afx-nuke-plugins/afx-nuke-plugins')
-        
-        Example
-        
-        nuke.pluginAddPath('/media/projects/nuke/afx-nuke-plugins')
+        nuke.pluginAddPath('$HOME/.nuke/afx-nuke-gizmos')
